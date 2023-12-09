@@ -1,1 +1,1 @@
-export const REACT_APP_BASE_URL = "http://localhost:5000";
+export const REACT_APP_BASE_URL = "https://inventory-manager-api-qrnn.onrender.com";
