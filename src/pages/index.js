@@ -5,3 +5,5 @@ export { default as UpdateProduct } from "./UpdateProduct";
 export { default as Error } from "./Error";
 export { default as Login } from "./Login";
 export { default as ProtectedRoutes } from "./ProtectedRoutes";
+export { default as Report } from "./Report";
+

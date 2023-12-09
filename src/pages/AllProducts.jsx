@@ -40,6 +40,13 @@ const AllProducts = () => {
               </Link>
             )}
           </button>
+          <button>
+            {user?.userRole === "admin" && (
+                <Link to="/report" className=" btn create-btn m-l">
+                  <span>See Report</span>
+                </Link>
+            )}
+          </button>
         </div>
         <Form />
         <Filters />

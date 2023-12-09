@@ -79,6 +79,7 @@ image {
   width: 90vw;
   max-width: 1170px;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 .btn {
@@ -301,7 +302,31 @@ image {
   text-decoration: none;
   border: none;
 }
+.m-l
+{
+  margin-left: 10px;
+}
+.get_history
+{
+  margin: 10px 0;
+}
 
+.m-y
+{
+  margin: 20px 0 !important;
+  font-size: 18px !important;
+  color: #504acc !important;
+}
+.m-t{
+  margin-top: 10px;
+}
+.end, .start
+{
+  max-width: 250px;
+  padding: 10px 15px !important;
+  margin-bottom: 5px;
+  border-radius: 7px;
+}
 .create-btn > span {
   font-size: 1.5rem;
   letter-spacing: 1px;

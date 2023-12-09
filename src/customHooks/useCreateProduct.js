@@ -2,6 +2,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import {REACT_APP_BASE_URL} from "./helper.js";
 
 const createProduct = async ({
   sku,
@@ -12,7 +13,7 @@ const createProduct = async ({
   accessToken,
 }) => {
   const { data } = await axios.post(
-    "https://inventory-manager-fglv.onrender.com/api/v1/products",
+    `${REACT_APP_BASE_URL}/api/v1/products`,
     {
       sku,
       name,

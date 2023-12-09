@@ -3,9 +3,10 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useProductsContext } from "../context/ProductsProvider";
+import {REACT_APP_BASE_URL} from "./helper.js";
 const loginUser = async (user) => {
   const { data } = await axios.post(
-    "https://inventory-manager-fglv.onrender.com/api/v1/auth/login",
+    `${REACT_APP_BASE_URL}/api/v1/auth/login`,
     user,
     {
       withCredentials: true,

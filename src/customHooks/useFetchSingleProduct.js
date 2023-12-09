@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-
+import {REACT_APP_BASE_URL} from "./helper.js";
 const fetchSingleProduct = async ({ productID, accessToken }) => {
   try {
     const { data } = await axios.get(
-      `https://inventory-manager-fglv.onrender.com/api/v1/products/${productID}`,
+      `${REACT_APP_BASE_URL}/api/v1/products/${productID}`,
       {
         headers: {
           authorization: `Bearer ${accessToken}`,

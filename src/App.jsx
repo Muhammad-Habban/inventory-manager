@@ -8,6 +8,7 @@ import {
   CreateProduct,
   UpdateProduct,
   Error,
+  Report
 } from "./pages/index";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route element={<ProtectedRoutes />}>
             <Route index element={<AllProducts />} />
             <Route path="/createProduct" element={<CreateProduct />} />
+            <Route path="/report" element={<Report />} />
             <Route
               path="/updateProduct/:productID"
               element={<UpdateProduct />}

@@ -2,10 +2,11 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import {REACT_APP_BASE_URL} from "./helper.js";
 
 const saveChanges = async ({ productID, details, accessToken }) => {
   const { data } = await axios.patch(
-    `https://inventory-manager-fglv.onrender.com/api/v1/products/${productID}`,
+    `${REACT_APP_BASE_URL}/api/v1/products/${productID}`,
     details,
     {
       headers: {
